@@ -60,7 +60,7 @@ case $MACHINE in
 esac
 
 if [ -z "${DISTRO}" ]; then
-  export DISTRO=angstrom-next
+  export DISTRO=angstrom-v2013.12
   echo "Setting DISTRO=$DISTRO"
 fi
 
