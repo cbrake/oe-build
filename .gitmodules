@@ -1,7 +1,6 @@
 [submodule "sources/bitbake"]
 	path = sources/bitbake
 	url = git://github.com/openembedded/bitbake.git
-	branch = master
 	branch = 1.20
 [submodule "sources/openembedded-core"]
 	path = sources/openembedded-core
@@ -10,12 +9,10 @@
 [submodule "sources/meta-openembedded"]
 	path = sources/meta-openembedded
 	url = git://github.com/openembedded/meta-oe.git
-	branch = master
 	branch = dora
 [submodule "sources/meta-angstrom"]
 	path = sources/meta-angstrom
 	url = git://github.com/Angstrom-distribution/meta-angstrom.git
-	branch = master
 	branch = angstrom-v2013.12-yocto1.5
 [submodule "sources/meta-bec"]
 	path = sources/meta-bec
