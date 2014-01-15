@@ -27,7 +27,7 @@ fi
 BUILDHOST_DISTRO=`egrep -h ^ID= /etc/*-release | sed 's#^ID=##'`
 
 case $BUILDHOST_DISTRO in
-    arch)
+    arch|debian)
 	NODEJS=node
 	;;
     ubuntu)
@@ -168,7 +168,7 @@ export BBPATH=${OE_BUILD_DIR}:${OE_SOURCE_DIR}/openembedded-core/meta${BBPATH_EX
 # Reconfigure dash
 #--------------------------------------------------------------------------
 if [ "$(readlink /bin/sh)" = "dash" ] ; then
-    sudo aptitude install expect -y
+    sudo apt-get install expect -y
     expect -c 'spawn sudo dpkg-reconfigure -freadline dash; send "n\n"; interact;'
 fi
 
@@ -532,7 +532,6 @@ export OE_QMAKE_RCC="${TOPDIR}/tmp/sysroots/x86_64-linux/usr/bin/rcc4"
 export OE_QMAKE_QDBUSCPP2XML="${TOPDIR}/tmp/sysroots/x86_64-linux/usr/bin/qdbuscpp2xml4"
 export OE_QMAKE_QDBUSXML2CPP="${TOPDIR}/tmp/sysroots/x86_64-linux/usr/bin/qdbusxml2cpp4"
 export OE_QMAKE_QT_CONFIG="{TOPDIR}/tmp/sysroots/x86_64-linux/usr/share/qtopia/mkspecs/qconfig.pri"
-
 
 
 
