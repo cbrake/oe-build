@@ -24,12 +24,12 @@
 	branch = angstrom-staging-yocto1.5
 [submodule "sources/meta-beagleboard"]
 	path = sources/meta-beagleboard
-	url = git://github.com/beagleboard/meta-beagleboard.git
+	url = git://github.com/koenkooi/meta-beagleboard.git
 	branch = master
 [submodule "sources/meta-gumstix-community"]
 	path = sources/meta-gumstix-community
 	url = git://gitorious.org/schnitzeltony-oe-meta/meta-gumstix-community.git
-	branch = master
+	branch = dora
 [submodule "sources/meta-browser"]
 	path = sources/meta-browser
 	url = git://github.com/OSSystems/meta-browser.git
