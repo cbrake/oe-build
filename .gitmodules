@@ -21,11 +21,11 @@
 [submodule "sources/meta-ti"]
 	path = sources/meta-ti
 	url = git://yoctoproject.org/meta-ti.git
-	branch = dora
+	branch = angstrom-staging-yocto1.5
 [submodule "sources/meta-beagleboard"]
 	path = sources/meta-beagleboard
 	url = git://github.com/koenkooi/meta-beagleboard.git
-	branch = master
+	branch = dora
 [submodule "sources/meta-gumstix-community"]
 	path = sources/meta-gumstix-community
 	url = git://gitorious.org/schnitzeltony-oe-meta/meta-gumstix-community.git
