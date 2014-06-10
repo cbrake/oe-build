@@ -21,7 +21,7 @@
 [submodule "sources/meta-ti"]
 	path = sources/meta-ti
 	url = git://yoctoproject.org/meta-ti.git
-	branch = angstrom-staging-yocto1.5
+	branch = dora
 [submodule "sources/meta-beagleboard"]
 	path = sources/meta-beagleboard
 	url = git://github.com/koenkooi/meta-beagleboard.git
