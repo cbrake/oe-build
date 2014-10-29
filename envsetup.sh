@@ -52,6 +52,9 @@ case $MACHINE in
   beagleboard|beaglebone|overo|wandboard-dual)
     export MACHINE_ARCH=armv7ahf-vfp-neon
     ;;
+  sama5d3_xplained)
+    export MACHINE_ARCH=armv7at2hf-vfp-neon
+    ;;
   *)
     echo "Note: Don't know how to set MACHINE_ARCH"
 esac
