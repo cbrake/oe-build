@@ -41,3 +41,7 @@
 	path = sources/meta-qt5
 	url = https://github.com/meta-qt5/meta-qt5.git
 	branch = dizzy
+[submodule "sources/meta-linaro"]
+	path = sources/meta-linaro
+	url = git://git.linaro.org/openembedded/meta-linaro.git
+	branch = dizzy
