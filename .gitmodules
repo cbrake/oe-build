@@ -22,14 +22,6 @@
 	path = sources/meta-ti
 	url = git://git.yoctoproject.org/meta-ti
 	branch = master
-[submodule "sources/meta-beagleboard"]
-	path = sources/meta-beagleboard
-	url = git://github.com/beagleboard/meta-beagleboard.git
-	branch = master
-[submodule "sources/meta-gumstix-community"]
-	path = sources/meta-gumstix-community
-	url = git://gitorious.org/schnitzeltony-oe-meta/meta-gumstix-community.git
-	branch = master
 [submodule "sources/meta-browser"]
 	path = sources/meta-browser
 	url = git://github.com/OSSystems/meta-browser.git
@@ -42,3 +34,6 @@
 	path = sources/meta-fsl-arm-extra
 	url = git://github.com/Freescale/meta-fsl-arm-extra.git
 	branch = dizzy
+[submodule "sources/meta-atmel"]
+	path = sources/meta-atmel
+	url = https://github.com/linux4sam/meta-atmel.git
