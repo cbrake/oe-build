@@ -1,19 +1,19 @@
 [submodule "sources/bitbake"]
 	path = sources/bitbake
 	url = git://github.com/openembedded/bitbake.git
-	branch = master
+	branch = 1.24
 [submodule "sources/openembedded-core"]
 	path = sources/openembedded-core
 	url = git://github.com/openembedded/oe-core.git
-	branch = master
+	branch = dizzy
 [submodule "sources/meta-openembedded"]
 	path = sources/meta-openembedded
 	url = git://github.com/openembedded/meta-oe.git
-	branch = master
+	branch = dizzy
 [submodule "sources/meta-angstrom"]
 	path = sources/meta-angstrom
 	url = git://github.com/Angstrom-distribution/meta-angstrom.git
-	branch = master
+	branch = angstrom-v2014.12-yocto1.7
 [submodule "sources/meta-bec"]
 	path = sources/meta-bec
 	url = git://github.com/cbrake/meta-bec.git
@@ -37,8 +37,8 @@
 [submodule "sources/meta-fsl-arm"]
 	path = sources/meta-fsl-arm
 	url = git://git.yoctoproject.org/meta-fsl-arm
-	branch = master
+	branch = dizzy
 [submodule "sources/meta-fsl-arm-extra"]
 	path = sources/meta-fsl-arm-extra
 	url = git://github.com/Freescale/meta-fsl-arm-extra.git
-	branch = master
+	branch = dizzy
