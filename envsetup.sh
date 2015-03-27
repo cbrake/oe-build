@@ -95,7 +95,7 @@ OE_ENV_FILE=localconfig.sh
 export BBFETCH2=True
 
 export DISTRO_DIRNAME=`echo $DISTRO | sed 's#[.-]#_#g'`
-export OE_DEPLOY_DIR=${OE_BASE}/build/tmp-${DISTRO_DIRNAME}-eglibc/deploy/images/${MACHINE}
+export OE_DEPLOY_DIR=${OE_BASE}/build/tmp-${DISTRO_DIRNAME}-glibc/deploy/images/${MACHINE}
 
 #--------------------------------------------------------------------------
 # Specify the root directory for your OpenEmbedded development
@@ -425,15 +425,14 @@ function oe_install_sd_rootfs
 
 function oe_install_sd_boot
 {
-  if [ -e /$MEDIA/OMAP-BOOT ]; then
-    OMAPBOOT="OMAP-BOOT"
+  if [ -e /$MEDIA/BOOT ]; then
+    OMAPBOOT="BOOT"
   else
-    OMAPBOOT="omap-boot"
+    OMAPBOOT="boot"
   fi
 
   cp ${OE_DEPLOY_DIR}/MLO /$MEDIA/$OMAPBOOT/MLO
   cp ${OE_DEPLOY_DIR}/u-boot.img /$MEDIA/$OMAPBOOT/
-  cp ${OE_DEPLOY_DIR}/uImage-$MACHINE.* /$MEDIA/$OMAPBOOT/uImage
 }
 
 function oe_feed_server()
