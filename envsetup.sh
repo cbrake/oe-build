@@ -50,7 +50,7 @@ fi
 
 case $MACHINE in 
   beagleboard|beaglebone|overo|wandboard-dual)
-    export MACHINE_ARCH=armv7ahf-vfp-neon
+    export MACHINE_ARCH=armv7at2hf-vfp-neon
     ;;
   *)
     echo "Note: Don't know how to set MACHINE_ARCH"
@@ -503,14 +503,14 @@ function oe_build_all()
 ###############################################################################
 
 BUILD_ARCH=`uname -m`
-CROSS_COMPILER_PATH=${OE_BUILD_TMPDIR}-eglibc/sysroots/${BUILD_ARCH}-linux/usr/bin/$MACHINE_ARCH-angstrom-linux-gnueabi
-OE_STAGING_PATH=${OE_BUILD_TMPDIR}-eglibc/sysroots/${BUILD_ARCH}-linux/usr/bin
+CROSS_COMPILER_PATH=${OE_BUILD_TMPDIR}-glibc/sysroots/${BUILD_ARCH}-linux/usr/bin/arm-angstrom-linux-gnueabi
+OE_STAGING_PATH=${OE_BUILD_TMPDIR}-glibc/sysroots/${BUILD_ARCH}-linux/usr/bin
 export PATH=$CROSS_COMPILER_PATH:$OE_STAGING_PATH:$PATH
 export ARCH=arm
 export CROSS_COMPILE=arm-angstrom-linux-gnueabi-
 
-export PKG_CONFIG_PATH=${OE_BUILD_TMPDIR}-eglibc/sysroots/cm-x270/usr/lib/pkgconfig
-export PKG_CONFIG_SYSROOT_DIR=${OE_BUILD_TMPDIR}-eglibc/sysroots/cm-x270
+export PKG_CONFIG_PATH=${OE_BUILD_TMPDIR}-glibc/sysroots/cm-x270/usr/lib/pkgconfig
+export PKG_CONFIG_SYSROOT_DIR=${OE_BUILD_TMPDIR}-glibc/sysroots/cm-x270
 
 # FIXME, the rest needs finished
 export QMAKESPEC="${TOPDIR}/tmp/sysroots/armv7a-angstrom-linux-gnueabi/usr/share/qt4/mkspecs/linux-gnueabi-oe-g++"
