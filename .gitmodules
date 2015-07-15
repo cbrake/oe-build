@@ -22,10 +22,6 @@
 	path = sources/meta-ti
 	url = git://git.yoctoproject.org/meta-ti
 	branch = fido
-[submodule "sources/meta-beagleboard"]
-	path = sources/meta-beagleboard
-	url = git://github.com/beagleboard/meta-beagleboard.git
-	branch = master
 [submodule "sources/meta-gumstix-community"]
 	path = sources/meta-gumstix-community
 	url = https://github.com/schnitzeltony/meta-gumstix-community.git
