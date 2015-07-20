@@ -252,6 +252,11 @@ function oe_clean()
     rm -rf ${OE_BUILD_TMPDIR}
 }
 
+function oe_clean_sstate()
+{
+  export SSTATE_CACHE_DIR=$(cd build/sstate-cache/;pwd)
+  ./sources/openembedded-core/scripts/sstate-cache-management.sh -d -y
+}
 
 ###############################################################################
 # OE_CONFIG() - Configure OE for a target
