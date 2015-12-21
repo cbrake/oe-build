@@ -334,11 +334,21 @@ function oe_partition_sd_3()
   echo CYLINDERS - $CYLINDERS
   echo CYLINDERS in rootfs - $CYLINDERS_ROOTFS
 
-  {
-  echo ,9,0x0C,*
-  echo ,$CYLINDERS_ROOTFS,0x83,-
-  echo ,,0x83,-
-  } | sudo sfdisk -D -H 255 -S 63 -C $CYLINDERS $DRIVE
+  if sfdisk --version | grep 2.26; then
+    echo 'sfdisk 2.26 detected'
+    {
+      echo 1M,200M,0xE,*
+      echo ,,,
+    } | sudo sfdisk ${DRIVE}
+  else
+    echo 'sfdisk not 2.26 detected'
+    {
+
+      echo ,9,0x0C,*
+      echo ,$CYLINDERS_ROOTFS,0x83,-
+      echo ,,0x83,-
+    } | sudo sfdisk -D -H 255 -S 63 -C $CYLINDERS $DRIVE
+  fi
 
   sudo umount ${DRIVE}1 2>/dev/null
   # If you get the message WARNING: Not enough clusters for a 32 bit FAT!, reduce cluster -s2, or -s1
@@ -383,10 +393,19 @@ function oe_partition_sd()
   echo CYLINDERS - $CYLINDERS
   echo CYLINDERS in rootfs - $CYLINDERS_ROOTFS
 
-  {
-  echo ,9,0x0C,*
-  echo ,,0x83,-
-  } | sudo sfdisk -D -H 255 -S 63 -C $CYLINDERS $DRIVE
+  if sfdisk --version | grep 2.26; then
+    echo 'sfdisk 2.26 detected'
+    {
+      echo 1M,200M,0xE,*
+      echo ,,,
+    } | sudo sfdisk ${DRIVE}
+  else
+    echo 'sfdisk not 2.26 detected'
+    {
+    echo ,20,0x0C,*
+    echo ,,0x83,-
+    } | sudo sfdisk -D -H 255 -S 63 -C $CYLINDERS $DRIVE
+  fi
 
   sudo umount ${DRIVE}1 2>/dev/null
   # If you get the message WARNING: Not enough clusters for a 32 bit FAT!, reduce cluster -s2, or -s1
