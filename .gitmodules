@@ -1,15 +1,15 @@
 [submodule "sources/bitbake"]
 	path = sources/bitbake
 	url = git://github.com/openembedded/bitbake.git
-	branch = master
+	branch = 1.26
 [submodule "sources/openembedded-core"]
 	path = sources/openembedded-core
 	url = git://github.com/openembedded/openembedded-core.git
-	branch = master
+	branch = fido
 [submodule "sources/meta-openembedded"]
 	path = sources/meta-openembedded
 	url = git://github.com/openembedded/meta-openembedded.git
-	branch = master
+	branch = fido
 [submodule "sources/meta-bec"]
 	path = sources/meta-bec
 	url = git://github.com/cbrake/meta-bec.git
@@ -17,7 +17,7 @@
 [submodule "sources/meta-ti"]
 	path = sources/meta-ti
 	url = git://git.yoctoproject.org/meta-ti
-	branch = master
+	branch = fido
 [submodule "sources/meta-browser"]
 	path = sources/meta-browser
 	url = git://github.com/OSSystems/meta-browser.git
@@ -25,13 +25,15 @@
 [submodule "sources/meta-qt5"]
 	path = sources/meta-qt5
 	url = https://github.com/meta-qt5/meta-qt5.git
-	branch = master
+	branch = fido
 [submodule "sources/meta-qt4"]
 	path = sources/meta-qt4
 	url = git://git.yoctoproject.org/meta-qt4
 [submodule "sources/meta-gumstix"]
 	path = sources/meta-gumstix
 	url = git://github.com/gumstix/meta-gumstix
+	branch = next
 [submodule "sources/meta-gumstix-extras"]
 	path = sources/meta-gumstix-extras
 	url = git://github.com/gumstix/meta-gumstix-extras
+	branch = next
