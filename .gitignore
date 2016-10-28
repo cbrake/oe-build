@@ -10,6 +10,7 @@ subversion_config/
 package-depends.dot
 pn-depends.dot
 task-depends.dot
+pn-buildlist
 environment-oecore
 localconfig.sh
 image/SeedSense_update_*.img
