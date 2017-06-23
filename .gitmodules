@@ -1,15 +1,15 @@
 [submodule "sources/bitbake"]
 	path = sources/bitbake
 	url = git://github.com/kraj/bitbake.git
-	branch = master
+	branch = 1.34
 [submodule "sources/openembedded-core"]
 	path = sources/openembedded-core
 	url = git://github.com/kraj/openembedded-core.git
-	branch = master
+	branch = pyro
 [submodule "sources/meta-openembedded"]
 	path = sources/meta-openembedded
 	url = git://github.com/kraj/meta-openembedded.git
-	branch = master
+	branch = pyro
 [submodule "sources/meta-bec"]
 	path = sources/meta-bec
 	url = git://github.com/cbrake/meta-bec.git
@@ -25,35 +25,35 @@
 [submodule "sources/meta-freescale"]
 	path = sources/meta-freescale
 	url = git://git.yoctoproject.org/meta-freescale
-	branch = master
+	branch = pyro
 [submodule "sources/meta-freescale-3rdparty"]
 	path = sources/meta-freescale-3rdparty
 	url = git://github.com/Freescale/meta-freescale-3rdparty.git
-	branch = master
+	branch = pyro
 [submodule "sources/meta-qt5"]
 	path = sources/meta-qt5
 	url = https://github.com/meta-qt5/meta-qt5.git
-	branch = master
+	branch = pyro
 [submodule "sources/meta-intel"]
 	path = sources/meta-intel
 	url = git://git.yoctoproject.org/meta-intel
-	branch = master
+	branch = pyro
 [submodule "sources/meta-freescale-distro"]
 	path = sources/meta-freescale-distro
 	url = git://github.com/Freescale/meta-freescale-distro.git
-	branch = master
+	branch = pyro
 [submodule "sources/meta-raspberrypi"]
 	path = sources/meta-raspberrypi
 	url = git://github.com/kraj/meta-raspberrypi
-	branch = master
+	branch = pyro
 [submodule "sources/meta-96boards"]
 	path = sources/meta-96boards
 	url = git://github.com/kraj/meta-96boards
-	branch = master
+	branch = pyro
 [submodule "sources/meta-qcom"]
 	path = sources/meta-qcom
 	url = git://github.com/kraj/meta-qcom
-	branch = master
+	branch = pyro
 [submodule "sources/meta-variscite-fslc"]
 	path = sources/meta-variscite-fslc
 	url = git://github.com/kraj/meta-variscite-fslc.git
